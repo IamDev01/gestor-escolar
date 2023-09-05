@@ -20,6 +20,19 @@ Utilizamos o Mongoose para estabelecer a conexão com o banco de dados MongoDB. 
 ## API
 Implementamos uma API Node.js que lida com operações de criação e recuperação de informações em um banco de dados MongoDB usando o Mongoose.
 
+## Envio de dados
+
+- Antes de enviar os dados, eles são serializados em uma string JSON usando a função JSON.stringify(). Isso converte o objeto JavaScript em uma representação JSON que pode ser enviada pela rede.
+  ```const aluno = await fetchAPI('/api/alunos', 'POST', {
+  cpf,
+  nome,
+  DN,
+  classe,
+});```
+
+- Envio da Solicitação HTTP: Os dados serializados em JSON são enviados como parte do corpo de uma solicitação HTTP usando o método POST. Isso significa que os dados são incluídos no corpo da solicitação HTTP e podem ser acessados pela API no lado do servidor.
+
+
 ## Roteamento de Página
 - **Página Principal:** O arquivo `pages/index.js` é considerado a página principal e é acessada pelo URL raiz (`/`) do projeto.
 - **Páginas Personalizadas:** Você pode criar páginas adicionais criando arquivos na pasta `pages`. Por exemplo, `pages/listaClasses.js` corresponde a `/listaClasses` no URL.
