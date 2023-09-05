@@ -23,12 +23,12 @@ Implementamos uma API Node.js que lida com operações de criação e recuperaç
 ## Envio de dados
 
 - Antes de enviar os dados, eles são serializados em uma string JSON usando a função JSON.stringify(). Isso converte o objeto JavaScript em uma representação JSON que pode ser enviada pela rede.
-  ``` const aluno = await fetchAPI('/api/alunos', 'POST', {
+  const aluno = await fetchAPI('/api/alunos', 'POST', {
   cpf,
   nome,
   DN,
   classe,
-}); ```
+});
 
 - Envio da Solicitação HTTP: Os dados serializados em JSON são enviados como parte do corpo de uma solicitação HTTP usando o método POST. Isso significa que os dados são incluídos no corpo da solicitação HTTP e podem ser acessados pela API no lado do servidor.
 
