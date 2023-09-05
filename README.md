@@ -45,7 +45,7 @@ Para melhorar a legibilidade do código, utilizamos alias de importação. Esta 
 Visando proporcionar uma experiência do usuário mais agradável, as requisições incluem informações de carregamento para indicar o progresso das operações.
 
 ## Passos para Executar
-
+Você precisa ter o Nodejs instalado após execute os seguintes passos no terminal.
 1. Execute `npm install` para instalar as dependências do projeto.
 2. Execute `npm run dev` para iniciar o projeto. Ele estará disponível em `localhost:3000`.
 
