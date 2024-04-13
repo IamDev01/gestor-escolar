@@ -38,9 +38,6 @@ Implementamos uma API Node.js que lida com operações de criação e recuperaç
 - **Páginas Personalizadas:** Você pode criar páginas adicionais criando arquivos na pasta `pages`. Por exemplo, `pages/listaClasses.js` corresponde a `/listaClasses` no URL.
 - **Parâmetros em Rotas:** É possível adicionar parâmetros às suas rotas criando arquivos com colchetes. Por exemplo, `pages/posts/[id].js` corresponde a `/posts/1`, `/posts/2`, etc.
 
-## Alias de Importação
-Para melhorar a legibilidade do código, utilizamos alias de importação. Esta técnica simplifica os caminhos de importação de módulos, tornando-os mais curtos e descritivos.
-
 ## Feedback de Carregamento
 Visando proporcionar uma experiência do usuário mais agradável, as requisições incluem informações de carregamento para indicar o progresso das operações.
 
